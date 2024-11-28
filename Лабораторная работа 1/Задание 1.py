@@ -1,9 +1,11 @@
-condition = ...  # TODO поочередно подставьте значения True и False
-if condition:
-    # один отступ для указания принадлежности данного кода к определенному блоку
-    print("Выполнится, если условие истинно")
-else:
-    # один отступ для указания принадлежности данного кода к определенному блоку
-    print("Выполнится, если условие ложно")
+numbers = [2, -93, -2, 8, None, -44, -1, -85, -14, 90, -22, -90, -100, -8, 38, -92, -45, 67, 53, 25]
 
-print("Выполнится всегда, так как нет условия")
+# TODO заменить значение пропущенного элемента средним арифметическим
+before_none = sum(numbers[:4])
+after_none = sum(numbers[5:])
+sum_numbers = before_none + after_none
+count_numbers = len(numbers)
+average_of_numbers = sum_numbers/count_numbers
+numbers[4] = average_of_numbers
+
+print("Измененный список:", numbers)
